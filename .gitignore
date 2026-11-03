@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Downloaded Wikipedia data
+data/raw/
+data/processed/
+data/crawler_state.json
+
+# Future private evaluation files
+data/private/
+private/
+secrets/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Operating system
+.DS_Store
+Thumbs.db
