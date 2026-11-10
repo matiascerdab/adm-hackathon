@@ -3,26 +3,28 @@ __pycache__/
 *.py[cod]
 .venv/
 .pytest_cache/
-.ruff_cache/
 
-# Local configuration and secrets
+# Local data
+data/
+raw/
+processed/
+clean/
+private/
+quarantine/
+
+# Databases and generated datasets
+*.sqlite3
+*.db
+*.db-*
+*.parquet
+*.jsonl
+
+# Secrets
 .env
 .env.*
 !.env.example
+*.key
+*.bin
 
-# Downloaded Wikipedia data
-data/raw/
-data/processed/
-data/crawler_state.json
-
-# Future private evaluation files
-data/private/
-private/
-secrets/
-
-# Notebook checkpoints
+# Other
 .ipynb_checkpoints/
-
-# Operating system
-.DS_Store
-Thumbs.db
